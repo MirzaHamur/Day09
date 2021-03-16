@@ -1,17 +1,16 @@
 // Only change code below this line
-// Only change code below this line
-function compareDifferentValues(m, n) {
-    if (m === n) {
-    return "Equal";
-    }
+function compareStrictValues(m) {
+    if (m != 55) {
     return "Not equal";
+    }
+    return "Equal";
   }
-  compareDifferentValues(8, "8");
+  compareStrictValues(55);
   
-  console.log(compareDifferentValues(8, "8"));
-  console.log(compareDifferentValues("8", 8));
-  console.log(compareDifferentValues("8", 8));
-  console.log(compareDifferentValues("8", "8"));
-  console.log(compareDifferentValues(8, 8));
+  console.log(compareStrictValues(55));
+  console.log(compareStrictValues("55"));
+  console.log(compareStrictValues("21"));
+  console.log(compareStrictValues(12));
+  console.log(compareStrictValues("Doe"));
   // Only change code above this line
-  module.exports = compareDifferentValues;
+  module.exports = compareStrictValues;
